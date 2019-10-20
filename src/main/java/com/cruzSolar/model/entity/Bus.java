@@ -16,7 +16,6 @@ public class Bus {
 	@Column(name = "bus_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
 	
 	@NotEmpty
 	@Column(name = "plate", nullable = false)
