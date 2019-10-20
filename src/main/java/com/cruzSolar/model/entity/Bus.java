@@ -17,6 +17,7 @@ public class Bus {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	
 	@NotEmpty
 	@Column(name = "plate", nullable = false)
 	private String plate;
