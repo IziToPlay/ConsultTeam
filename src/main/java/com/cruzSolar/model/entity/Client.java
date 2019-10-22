@@ -47,15 +47,12 @@ public class Client {
 	@NotEmpty(message="Enter your cell phone")
 	@Column(name = "cell_phone", nullable = false)
 	private Long cellPhone;
-	
-	@NotEmpty(message="Enter your credit card")
-	@Column(name = "credit_card", nullable = false)
-	private String creditCard;
 
 	public Long getId() {
 		return id;
 	}
 
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
@@ -107,14 +104,5 @@ public class Client {
 	public void setCellPhone(Long cellPhone) {
 		this.cellPhone = cellPhone;
 	}
-
-	public String getCreditCard() {
-		return creditCard;
-	}
-
-	public void setCreditCard(String creditCard) {
-		this.creditCard = creditCard;
-	}
-
 	
 }
